@@ -2,7 +2,7 @@ let x = 0
 let y = 0
 const lightsLocation = 800
 function setup() {
-  createCanvas(800, 800)
+  createCanvas(950, 800)
   background(255) // one number 0-255 is dark to light
 }
 function draw() {

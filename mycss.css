@@ -4,6 +4,19 @@
   font-family: "Arima Madurai", cursive;
 }
 
+
+.layout {
+  display: grid;
+  grid-template-columns: 270px auto 450px;
+  margin: 0 auto;
+}
+
+.midLayout {
+  position: relative;
+ 
+  top: 2px;
+}
+
 .navigation {
     position: fixed;
     font-size: 12px;

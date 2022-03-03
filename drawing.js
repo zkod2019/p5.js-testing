@@ -1,9 +1,9 @@
 function setup() {
-    createCanvas(800, 800); 
+    createCanvas(950, 800); 
     fill(255,182,193);
     strokeWeight(2);
     stroke(51);
-    rect(2, 2, 800-2, 800-2);
+    rect(2, 2, 950-2, 800-2);
     noStroke();
   }
   
