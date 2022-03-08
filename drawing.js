@@ -1,13 +1,22 @@
+const CANVAS_LENGTH = 800;
+const BORDER_WEIGHT = 10;
+const BRUSH_WEIGHT = 3;
+
 function setup() {
-    createCanvas(950, 800); 
+    createCanvas(CANVAS_LENGTH, CANVAS_LENGTH); 
     fill(255,182,193);
-    strokeWeight(2);
-    stroke(51);
-    rect(2, 2, 950-2, 800-2);
+    strokeWeight(BORDER_WEIGHT);
+    rect(
+      BORDER_WEIGHT,
+      BORDER_WEIGHT,
+      CANVAS_LENGTH - BORDER_WEIGHT * 2,
+      CANVAS_LENGTH - BORDER_WEIGHT * 2
+    );
     noStroke();
   }
   
   function draw() {
+    noStroke();
     
     if (mouseIsPressed) {
       fill(0);
@@ -15,5 +24,5 @@ function setup() {
         noFill();
     }
     
-    ellipse(mouseX, mouseY, 3, 3);
+    ellipse(mouseX, mouseY, BRUSH_WEIGHT, BRUSH_WEIGHT);
   }
