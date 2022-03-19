@@ -5,7 +5,7 @@ function setup() {
   }
   function draw() {
     background(0);
-    text(key, 150, 275); // Draw at coordinate (20,75)
+    text(key, 500, 275); // Draw at coordinate (20,75)
 
     line(1,0,4,5);
   }
